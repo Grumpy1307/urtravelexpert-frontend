@@ -1,0 +1,89 @@
+.formWrap {
+  max-width: 720px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border: 1px solid #e6eef6;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.input,
+.textarea,
+.select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #dbe9f7;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  background: #fbfdff;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2,132,199,0.08);
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.col {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  background: #0284c7;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnGhost {
+  background: transparent;
+  border: 1px solid #dbe9f7;
+  color: #0f172a;
+}
+
+.message {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* small screens */
+@media (max-width: 640px) {
+  .row { flex-direction: column; }
+  .actions { justify-content: stretch; }
+}
